@@ -3,7 +3,10 @@
 
 
 up:
+	mkdir -p ollama open-webui
 	docker compose up -d --build --force-recreate
+down:
+	docker compose down
 
 destroy:
 	docker compose down -v

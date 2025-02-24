@@ -1,4 +1,3 @@
-# version: '3'
 services:
   webui:
     image: ghcr.io/open-webui/open-webui:git-09a81eb
