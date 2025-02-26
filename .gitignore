@@ -5,7 +5,6 @@ __pycache__/
 
 *temp/
 *_example
-data_state.json
 main.log
 
 ollama/

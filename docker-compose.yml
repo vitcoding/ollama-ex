@@ -13,10 +13,13 @@ services:
       - ollama
 
   ollama:
-    image: ollama/ollama:rocm
+    image: ollama/ollama
     container_name: ollama
     devices:
-      - /dev/dri
+      - "/dev/dri/card1:/dev/dri/card1"
+      - "/dev/dri/renderD128:/dev/dri/renderD128"
+    # devices:
+    #   - /dev/dri
     volumes:
       - ./ollama:/root/.ollama
     ports:
