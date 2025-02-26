@@ -23,18 +23,16 @@ start:
 	docker compose start
 
 
+pull-models:
+	docker compose exec -it ollama ollama pull nomic-embed-text
+	docker compose exec -it ollama ollama pull llama3.2:3b
+
 run-deepseek:
 	docker compose exec -it ollama ollama run deepseek-r1:8b
 run-llama:
 	docker compose exec -it ollama ollama run llama3.2:3b
-
 run-ollama3:
 	docker compose exec -it ollama ollama run llama3
-
-
-# pull-models:
-# 	docker compose exec -it ollama ollama pull nomic-embed-text
-# 	docker compose exec -it ollama ollama pull llama3.2:3b
 
 
 # run-deepseek-r1-32b:
@@ -49,6 +47,9 @@ run-ollama3:
 # docker compose exec -it ollama ollama rm llama3.3
 # # Copy a model
 # docker compose exec -it ollama ollama cp llama3.3 my-model
+
+rag-prj:
+	code app_rag
 
 prune:
 	docker system prune -a -f
