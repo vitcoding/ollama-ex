@@ -57,4 +57,4 @@ with open("sourcedocs.txt") as f:
                 metadatas={"source": filename},
             )
 
-print("--- %s seconds ---" % (time.time() - starttime))
+print("\n--- %s seconds ---" % (time.time() - starttime))
