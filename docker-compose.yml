@@ -20,6 +20,8 @@ services:
       - "/dev/dri/renderD128:/dev/dri/renderD128"
     # devices:
     #   - /dev/dri
+    environment:
+      - LIBGL_ALWAYS_SOFTWARE=0
     volumes:
       - ./ollama:/root/.ollama
     ports:
