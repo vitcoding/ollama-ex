@@ -1,6 +1,6 @@
 # Ollama example
 
-[llama](llama_image.jpeg)
+![llama](llama_image.jpeg)
 
 ## Ollama launch
 1. Run ollama: `make up`
